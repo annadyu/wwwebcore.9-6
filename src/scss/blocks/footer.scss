@@ -1,0 +1,48 @@
+html, body {
+    font-family: "TT Lake", sans-serif;
+}
+
+
+footer {
+    background: #F8F8F8;
+    font-family: "TT Lake Medium", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7E7E82;
+    text-align: center;
+}
+
+.footer_wrapper {
+    padding-bottom: 19px;
+}
+
+.footer_copyright {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_confidentiality {
+    margin-bottom: 16px;
+}
+
+.footer_info {
+    margin-right: 24px;
+}
+
+@media (min-width: 768px) {
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_copyright {
+        width: 218px;
+        text-align: left;
+    }
+
+    .footer_info {
+        width: 213px;
+        text-align: right;
+    }
+}

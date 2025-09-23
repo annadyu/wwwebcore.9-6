@@ -1,0 +1,136 @@
+html, body {
+    font-family: "TT Lake", sans-serif;
+}
+
+.devices {
+    background: #F8F8F8;
+    padding-bottom: 32px;
+}
+
+/* .devices_main {
+    margin: 0 16px;
+} */
+
+.devices_title {
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+.devices_swiper {
+    min-height: 200px;
+}
+
+.devices_swiper-wrapper {
+    max-height: 160px;
+}
+
+.devices_swiper-slide {
+    display: flex;
+    flex-direction: column;
+    max-width: 224px;
+    min-height: 160px;
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin-right: 24px;
+}
+
+.devices_swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.devices_swiper-content {
+    font-family: "TT Lake Medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin: 16px 16px;
+}
+
+.devices_swiper-btn {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.devices_show-btn {
+    display: none;
+}
+
+/* адаптивная верстка 768px */
+
+@media (min-width: 768px) {
+
+    .devices_swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        gap: 16px;
+    }
+
+    .devices_swiper {
+        margin: 0 16px;
+        min-height: 170px;
+    }
+
+    .devices_swiper.expanded {
+        height: 520px;
+    }
+
+    .devices_swiper-slide {
+        max-width: 224px;
+        min-height: 160px;
+    }
+
+    .devices_show-btn {
+        margin: 24px 54px;
+        display: block;
+        position: relative;
+        font-family: "TT Lake Medium";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+
+    .devices_show-btn::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -34px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../img/arrows.svg)  0 0/ 100% no-repeat;
+    }
+}
+
+/* адаптивная верстка 1120px */
+
+@media (min-width: 1120px) {
+
+    .devices_swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+    }
+
+    .devices_swiper.expanded {
+        height: 370px;
+    }
+}
+
+/*  адаптивная верстка 1340px */
+
+@media (min-width: 1340px) {
+
+.devices_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+}

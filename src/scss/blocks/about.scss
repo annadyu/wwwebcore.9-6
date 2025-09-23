@@ -1,0 +1,373 @@
+html,
+body {
+    font-family: "TT Lake", sans-serif;
+}
+
+/* ---------about--------- */
+
+.about_header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+}
+
+.about_inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about_menu {
+    display: flex;
+    margin-left: 24px;
+}
+
+/* .about_menu-link {
+    margin-left: 16px;
+} */
+
+.about_menu-img {
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 50%;
+}
+
+.about_logo {
+    width: 97px;
+    height: 51px;
+    margin-right: 39px;
+    margin-left: 17px;
+}
+
+.about_nav-contacts {
+    display: none;
+}
+
+.about_nav-list {
+    display: flex;
+}
+
+.about_nav-img {
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 50%;
+    margin-right: 16px;
+
+}
+
+.about_nav-item {
+    position: relative;
+
+}
+
+.about_nav-search {
+    display: flex;
+    /* margin-left: 75px; */
+}
+
+.about_nav-span {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    top: 4px;
+    right: 75px;
+    background: #EAEAEA;
+}
+
+.about_main {
+    background: #F8F8F8;
+}
+
+.about_main-inner {
+    margin: 0 16px;
+}
+
+.about_heading {
+    margin-bottom: 24px;
+}
+
+.about_title {
+    font-family: "TT Lake Bold", sans-serif;
+    color: #1B1C21;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin: 0 16px;
+    position: relative;
+
+}
+
+.about_title::before {
+    content: "";
+    position: absolute;
+    border-radius: 4px;
+    top: -1px;
+    left: -33px;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+}
+
+.about_btn-link {
+    display: none;
+}
+
+.about_menu-list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: 0;
+}
+
+.about_menu-item {
+    white-space: nowrap;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    padding: 2px 5px;
+    border: 2px solid #F8F8F8;
+
+}
+
+.about_menu-item:first-child {
+    background-color: #fff;
+    border: 2px solid #B8FFEC
+}
+
+.about_menu-item:last-child {
+    margin-right: 0;
+}
+
+.about_content {
+    margin-top: 40px;
+}
+
+.about_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+    max-height: 90px;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+
+}
+
+.about_text.expanded {
+    max-height: 500px;
+}
+
+.about_read-more {
+    position: relative;
+    color: #1B1C21;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    display: inline;
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+.about_read-more-btn {
+    margin-bottom: 16px;
+    color: #1B1C21;
+}
+
+.about_read-more::before {
+    position: absolute;
+    margin-right: 16px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    top: -1px;
+    left: -36px;
+    background: url(../img/arrows.svg) 0 0/ 100% no-repeat;
+}
+
+.about_content-img-box {
+    width: 100%;
+
+}
+
+.about_content-img-box img {
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 32px;
+}
+
+/* адаптивная верстка 768 */
+
+@media (min-width: 768px) {
+
+    .about_title::before {
+        left: -41px;
+    }
+
+    .about_nav-search {
+        margin-left: 0;
+    }
+
+    .about_main-inner {
+        margin: 0 25px;
+    }
+
+    .about_content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .about_text {
+        width: 312px;
+        max-height: 160px;
+    }
+
+    .about_text.expanded {
+        max-height: 500px;
+    }
+
+    .about_content-text {
+        margin-right: 48px;
+        align-items: flex-start;
+    }
+
+    .about_nav-contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_header {
+        display: flex;
+
+    }
+
+    .about_btn-box {
+        display: flex;
+    }
+
+    .about_logo {
+        margin-left: 26px;
+        margin-right: 251px;
+    }
+
+    .about_nav-contacts {
+        margin-right: 25px;
+    }
+
+    .about_menu {
+        position: relative;
+    }
+
+    .about_menu::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2px;
+        height: 32px;
+        left: 53px;
+        top: 5px;
+        background: #EAEAEA;
+    }
+
+    .about_content-img {
+        display: flex;
+        justify-self: flex-end;
+    }
+}
+
+/* адаптивная верстка 1120px */
+
+@media (min-width: 1120px) {
+
+    .about_title::before {
+        left: -40px;
+    }
+
+    .about_header {
+        display: none;
+    }
+
+    .about_heading {
+        padding-top: 42px;
+    }
+
+    .main_btn-box {
+        display: flex;
+    }
+
+    .about_text {
+        width: 490px;
+        max-height: 160px;
+        align-self: flex-start;
+    }
+
+    .about_heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_content-text {
+        height: 200px;
+    }
+
+
+    .about_content-img-box {
+        width: 532px;
+        height: 307px;
+        margin-bottom: 32px;
+    }
+
+    .about_content-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about_menu-item {
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+
+    .about_menu-list {
+        flex-wrap: wrap;
+        white-space: normal;
+        overflow-x: visible;
+    }
+
+    .about_btn-img {
+        margin-right: 8px;
+
+    }
+
+    .about_btn-link {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+    }
+
+    .about_btn-link:last-child {
+        margin-right: 0;
+    }
+
+    .about_content {
+        margin-top: 65px;
+        align-items: flex-start;
+    }
+
+
+
+}
