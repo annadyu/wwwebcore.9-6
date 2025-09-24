@@ -11,9 +11,8 @@ footer {
     letter-spacing: 0px;
     color: #7E7E82;
     text-align: center;
-}
 
-.footer_wrapper {
+    .footer_wrapper {
     padding-bottom: 19px;
 }
 
@@ -45,4 +44,14 @@ footer {
         width: 213px;
         text-align: right;
     }
+
 }
+
+@media (min-width: 1440px) {
+.footer_wrapper {
+    padding-left: 320px;
+}
+}
+
+}
+

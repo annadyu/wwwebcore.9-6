@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: "TT Lake", sans-serif;
 }
 
@@ -6,435 +7,409 @@ html, body {
 .prices {
     background: #F8F8F8;
     padding-bottom: 80px;
-}
 
-.prices_title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    margin-left: 16px;
-}
-
-.prices_swiper {
-    height: 250px;
-}
-
-.prices_swiper-wrapper {
-    max-height: 200px;
-}
-
-.prices_swiper-slide {
-    max-width: 260px;
-    height: 200px;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    background: #fff;
-    margin-right: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.prices_swiper-slide:last-child {
-    margin-right: 0;
-}
-
-.prices_swiper-content {
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    margin: 16px 16px;
-}
-
-.prices_swiper-content span {
-    font-family: "TT Lake Medium";
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0px;
-    color: #7E7E82;
-}
-
-.prices_swiper-btn {
-    position: relative;
-    background: #FF3E79;
-    border-radius: 16px;
-    width: 119px;
-    height: 32px;
-
-}
-
-.prices_swiper-btn::after {
-    position: absolute;
-    display: block;
-    content: "";
-    top: 11px;
-    right: 16px;
-    width: 7px;
-    height: 10px;
-    background: url(../img/dropdown.svg)  0 0/ 100% no-repeat;
-}
-
-.price_btn-text {
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    font-family: "TT Lake Bold";
-    color: #fff;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: -0.15px;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-.prices_content-services {
-    margin-bottom: 16px;
-}
-
-.prices_first-service, .second_service {
-    margin-bottom: 34px;
-}
-
-.prices_content-prices {
-    margin-bottom: 16px;
-}
-
-.prices_content-time {
-    display: flex;
-    white-space: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.prices_text {
-    margin: 16px 16px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    max-width: 288px;
-    height: 140px;
-}
-
-.prices_btn {
-    margin-left: 16px;
-    position: relative;
-    font-family: 'TT Lake Medium';
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-}
-
-.prices_btn::after {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 6px;
-    right: -22px;
-    width: 12px;
-    height: 20px;
-    background: url(../img/Line.svg)no-repeat;
-}
-
-/* адаптивная верстка 768px */
-@media (min-width: 768px) {
-
-    .prices_swiper {
-        min-height: 350px;
+    .swiper {
+        height: 250px;
     }
 
-    .prices_swiper-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
+    .swiper-wrapper {
+        max-height: 200px;
     }
 
-    .prices_swiper-slide {
-        margin: 0 16px;
-        max-height: 64px;
-        min-width: 720px;
+    .swiper-slide {
+        max-width: 260px;
+        height: 200px;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        background: #fff;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    .prices_swiper-content {
+    .swiper-slide:last-child {
+        margin-right: 0;
+    }
+
+    .swiper_content {
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.2px;
-        display: grid;
-        grid-template-columns: 4.5fr auto auto;
-        align-items: center;
-        gap: 20px;
-        white-space: nowrap;
+        margin: 16px 16px;
     }
 
-    .prices_swiper-content span {
-        display: none;
-    }
-
-    .prices_content-services, .prices_content-prices, .prices_content-time {
-        margin-bottom: 0;
-    }
-
-    .prices_swiper-btn {
-        margin-left: 20px;
-    }
-
-    .first_btn {
-        margin-left: 31px;
-    }
-
-    .prices_text {
-        max-width: 425px;
-        height: 60px;
-    }
-}
-
-/* адаптивная верстка 1120px */
-@media (min-width: 1120px) {
-    .prices_swiper-slide {
-        min-width: 1056px;
-    }
-
-    .prices_swiper-content {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-
-    .prices_swiper-btn {
-        margin-left: 111px;
-    }
-
-    .first_btn {
-        margin-left: 142px;
-    }
-}
-
-
-/*  адаптивная верстка 1340px */
-
-@media (min-width: 1340px) {
-
-.prices_main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-}
-
-.prices {
-    background: #F8F8F8;
-    padding-bottom: 80px;
-}
-
-.prices_title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    margin-left: 16px;
-}
-
-.prices_swiper {
-    height: 250px;
-}
-
-.prices_swiper-wrapper {
-    max-height: 200px;
-}
-
-.prices_swiper-slide {
-    max-width: 260px;
-    height: 200px;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    background: #fff;
-    margin-right: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.prices_swiper-slide:last-child {
-    margin-right: 0;
-}
-
-.prices_swiper-content {
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    margin: 16px 16px;
-}
-
-.prices_swiper-content span {
-    font-family: "TT Lake Medium";
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0px;
-    color: #7E7E82;
-}
-
-.prices_swiper-btn {
-    position: relative;
-    background: #FF3E79;
-    border-radius: 16px;
-    width: 119px;
-    height: 32px;
-
-}
-
-.prices_swiper-btn::after {
-    position: absolute;
-    display: block;
-    content: "";
-    top: 11px;
-    right: 16px;
-    width: 7px;
-    height: 10px;
-    background: url(../img/dropdown.svg)  0 0/ 100% no-repeat;
-}
-
-.price_btn-text {
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    font-family: "TT Lake Bold";
-    color: #fff;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: -0.15px;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-.prices_content-services {
-    margin-bottom: 16px;
-}
-
-.prices_first-service, .second_service {
-    margin-bottom: 34px;
-}
-
-.prices_content-prices {
-    margin-bottom: 16px;
-}
-
-.prices_content-time {
-    display: flex;
-    white-space: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.prices_text {
-    margin: 16px 16px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    max-width: 288px;
-    height: 140px;
-}
-
-.prices_btn {
-    margin-left: 16px;
-    position: relative;
-    font-family: 'TT Lake Medium';
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-}
-
-.prices_btn::after {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 6px;
-    right: -22px;
-    width: 12px;
-    height: 20px;
-    background: url(../img/Line.svg)no-repeat;
-}
-
-/* адаптивная верстка 768px */
-@media (min-width: 768px) {
-
-    .prices_swiper {
-        min-height: 350px;
-    }
-
-    .prices_swiper-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .prices_swiper-slide {
-        margin: 0 16px;
-        max-height: 64px;
-        min-width: 720px;
-    }
-
-    .prices_swiper-content {
+    .swiper_content span {
+        font-family: "TT Lake Medium";
         font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.2px;
-        display: grid;
-        grid-template-columns: 4.5fr auto auto;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: #7E7E82;
+    }
+
+    .swiper_btn {
+        position: relative;
+        background: #FF3E79;
+        border-radius: 16px;
+        width: 119px;
+        height: 32px;
+
+    }
+
+    .swiper_btn::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 11px;
+        right: 16px;
+        width: 7px;
+        height: 10px;
+        background: url(../img/dropdown.svg) 0 0/ 100% no-repeat;
+    }
+
+    .btn_text {
+        margin-left: 15px;
+        display: flex;
         align-items: center;
-        gap: 20px;
+        font-family: "TT Lake Bold";
+        color: #fff;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .content_services {
+        margin-bottom: 16px;
+    }
+
+    .prices_first-service,
+    .second_service {
+        margin-bottom: 34px;
+    }
+
+    .content_prices {
+        margin-bottom: 16px;
+    }
+
+    .content_time {
+        display: flex;
         white-space: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .prices_swiper-content span {
-        display: none;
+    .text {
+        margin: 16px 16px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        max-width: 288px;
+        height: 140px;
     }
 
-    .prices_content-services, .prices_content-prices, .prices_content-time {
-        margin-bottom: 0;
+    .prices_btn {
+        margin-left: 16px;
+        position: relative;
+        font-family: 'TT Lake Medium';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
     }
 
-    .prices_swiper-btn {
-        margin-left: 20px;
+    .prices_btn::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 6px;
+        right: -22px;
+        width: 12px;
+        height: 20px;
+        background: url(../img/Line.svg)no-repeat;
     }
 
-    .first_btn {
-        margin-left: 31px;
+    /* адаптивная верстка 768px */
+    @media (min-width: 768px) {
+
+        .swiper {
+            min-height: 350px;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: 1fr;
+        }
+
+        .swiper-slide {
+            margin: 0 16px;
+            max-height: 64px;
+            min-width: 720px;
+        }
+
+        .swiper_content {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            display: grid;
+            grid-template-columns: 4.5fr auto auto;
+            align-items: center;
+            gap: 20px;
+            white-space: nowrap;
+        }
+
+        .swiper_content span {
+            display: none;
+        }
+
+        .content_services,
+        .content_prices,
+        .content_time {
+            margin-bottom: 0;
+        }
+
+        .swiper_btn {
+            margin-left: 20px;
+        }
+
+        .first_btn {
+            margin-left: 31px;
+        }
+
+        .text {
+            max-width: 425px;
+            height: 60px;
+        }
     }
 
-    .prices_text {
-        max-width: 425px;
-        height: 60px;
+    /* адаптивная верстка 1120px */
+    @media (min-width: 1120px) {
+        .swiper-slide {
+            min-width: 1056px;
+        }
+
+        .swiper_content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .swiper_btn {
+            margin-left: 111px;
+        }
+
+        .first_btn {
+            margin-left: 142px;
+        }
     }
-}
 
-/* адаптивная верстка 1120px */
-@media (min-width: 1120px) {
-    .prices_swiper-slide {
-        min-width: 1056px;
+
+    /*  адаптивная верстка 1340px */
+
+    @media (min-width: 1340px) {
+        padding-left: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
     }
 
-    .prices_swiper-content {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+    .title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        margin-left: 16px;
     }
 
-    .prices_swiper-btn {
-        margin-left: 111px;
-    }
-
-    .first_btn {
-        margin-left: 142px;
-    }
-}
 
 
-/*  адаптивная верстка 1340px */
+    // .swiper-slide:last-child {
+    //     margin-right: 0;
+    // }
 
-@media (min-width: 1340px) {
+    // .swiper_content {
+    //     font-size: 14px;
+    //     line-height: 18px;
+    //     letter-spacing: 0.2px;
+    //     margin: 16px 16px;
+    // }
 
-.prices_main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    // .swiper_content span {
+    //     font-family: "TT Lake Medium";
+    //     font-size: 14px;
+    //     line-height: 16px;
+    //     letter-spacing: 0px;
+    //     color: #7E7E82;
+    // }
+
+    // .swiper_btn {
+    //     position: relative;
+    //     background: #FF3E79;
+    //     border-radius: 16px;
+    //     width: 119px;
+    //     height: 32px;
+
+    // }
+
+    // .swiper_btn::after {
+    //     position: absolute;
+    //     display: block;
+    //     content: "";
+    //     top: 11px;
+    //     right: 16px;
+    //     width: 7px;
+    //     height: 10px;
+    //     background: url(../img/dropdown.svg) 0 0/ 100% no-repeat;
+    // }
+
+    // .btn_text {
+    //     margin-left: 15px;
+    //     display: flex;
+    //     align-items: center;
+    //     font-family: "TT Lake Bold";
+    //     color: #fff;
+    //     font-size: 12px;
+    //     line-height: 24px;
+    //     letter-spacing: -0.15px;
+    //     text-align: right;
+    //     text-transform: uppercase;
+    // }
+
+    // .content_services {
+    //     margin-bottom: 16px;
+    // }
+
+    // .prices_first-service,
+    // .second_service {
+    //     margin-bottom: 34px;
+    // }
+
+    // .content_prices {
+    //     margin-bottom: 16px;
+    // }
+
+    // .content_time {
+    //     display: flex;
+    //     white-space: nowrap;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+    // .text {
+    //     margin: 16px 16px;
+    //     font-size: 14px;
+    //     line-height: 20px;
+    //     letter-spacing: 0.2px;
+    //     max-width: 288px;
+    //     height: 140px;
+    // }
+
+    // .prices_btn {
+    //     margin-left: 16px;
+    //     position: relative;
+    //     font-family: 'TT Lake Medium';
+    //     font-size: 16px;
+    //     line-height: 24px;
+    //     letter-spacing: -0.2px;
+    //     color: #1B1C21;
+    // }
+
+    // .prices_btn::after {
+    //     position: absolute;
+    //     content: "";
+    //     display: block;
+    //     top: 6px;
+    //     right: -22px;
+    //     width: 12px;
+    //     height: 20px;
+    //     background: url(../img/Line.svg)no-repeat;
+    // }
+
+    // /* адаптивная верстка 768px */
+    // @media (min-width: 768px) {
+
+    //     .swiper {
+    //         min-height: 350px;
+    //     }
+
+    //     .swiper-wrapper {
+    //         display: grid;
+    //         grid-template-columns: 1fr;
+    //     }
+
+    //     .swiper-slide {
+    //         margin: 0 16px;
+    //         max-height: 64px;
+    //         min-width: 720px;
+    //     }
+
+    //     .swiper_content {
+    //         font-size: 14px;
+    //         line-height: 18px;
+    //         letter-spacing: 0.2px;
+    //         display: grid;
+    //         grid-template-columns: 4.5fr auto auto;
+    //         align-items: center;
+    //         gap: 20px;
+    //         white-space: nowrap;
+    //     }
+
+    //     .swiper_content span {
+    //         display: none;
+    //     }
+
+    //     .content_services,
+    //     .content_prices,
+    //     .content_time {
+    //         margin-bottom: 0;
+    //     }
+
+    //     .swiper_btn {
+    //         margin-left: 20px;
+    //     }
+
+    //     .first_btn {
+    //         margin-left: 31px;
+    //     }
+
+    //     .text {
+    //         max-width: 425px;
+    //         height: 60px;
+    //     }
+    // }
+
+    // /* адаптивная верстка 1120px */
+    // @media (min-width: 1120px) {
+    //     .swiper-slide {
+    //         min-width: 1056px;
+    //     }
+
+
+
+    //     .swiper_content {
+    //         display: grid;
+    //         grid-template-columns: 2fr 1fr 1fr;
+    //     }
+
+    //     .swiper_btn {
+    //         margin-left: 111px;
+    //     }
+
+    //     .first_btn {
+    //         margin-left: 142px;
+    //     }
+    // }
+
+
+    // /*  адаптивная верстка 1340px */
+
+    // @media (min-width: 1440px) {
+    //     padding-left: 350px;
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: flex-start;
+    // }
 }

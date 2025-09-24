@@ -1,7 +1,7 @@
 import '../scss/style.scss';
 
-const text = document.getElementsByClassName("about_text")[0];
-const btn = document.getElementsByClassName("about_read-more-btn")[0];
+const text = document.getElementsByClassName("main_text")[0];
+const btn = document.getElementsByClassName("read_more-btn")[0];
 
 btn.addEventListener("click", () => {
     text.classList.toggle("expanded");
@@ -35,7 +35,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
 if (window.matchMedia("(min-width: 768px)").matches) {
     const devicesSwiper = document.getElementsByClassName("devices_swiper")[0];
-    const btn = document.getElementsByClassName("devices_show-btn")[0];
+    const btn = document.getElementsByClassName("show_btn")[0];
 
     btn.addEventListener("click", () => {
         devicesSwiper.classList.toggle("expanded");
@@ -45,12 +45,12 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     });
 }
 
-document.querySelector('.about_menu').addEventListener('click', function () {
+document.querySelector('.header_menu').addEventListener('click', function () {
     document.querySelector('.aside').classList.toggle('open');
 });
 
 const aside = document.querySelector('.aside');
-const asideBurger = document.querySelector('.aside_burger');
-document.querySelector('.aside_burger').addEventListener('click', function () {
+const Burger = document.querySelector('.burger');
+document.querySelector('.burger').addEventListener('click', function () {
     aside.classList.remove('open')
 });
