@@ -8,6 +8,14 @@ body {
 .brands {
     padding-bottom: 30px;
 
+    .heading {
+        display: flex;
+        align-items: center;
+        height: 65px;
+        width: 100%;
+        background: linear-gradient(270deg, #F8F8F8 20%, #FFFFFF 80%);
+        margin-bottom: 30px;
+    }
 
     h1 {
         font-weight: 400;
