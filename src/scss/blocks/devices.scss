@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: "TT Lake", sans-serif;
 }
 
@@ -7,6 +8,8 @@ html, body {
     padding-bottom: 32px;
 
     .heading {
+        display: flex;
+        align-items: center;
         height: 65px;
         width: 100%;
         background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
@@ -14,126 +17,126 @@ html, body {
     }
 
     .title {
-    margin-left: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-}
-
-.swiper {
-    min-height: 200px;
-}
-
-.swiper-wrapper {
-    max-height: 160px;
-}
-
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    max-width: 224px;
-    min-height: 160px;
-    background: #fff;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    margin-right: 24px;
-}
-
-.swiper-slide:last-child {
-    margin-right: 0;
-}
-
-.swiper_content {
-    font-family: "TT Lake Medium", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    margin: 16px 16px;
-}
-
-.swiper_btn {
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: 16px;
-    margin-bottom: 16px;
-}
-
-.show_btn {
-    display: none;
-}
-
-/* адаптивная верстка 768px */
-
-@media (min-width: 768px) {
-
-    .swiper-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 240px);
-        gap: 16px;
-    }
-
-    .swiper {
-        margin: 0 16px;
-        min-height: 170px;
-    }
-
-    .swiper.expanded {
-        height: 520px;
-    }
-
-    .swiper-slide {
-        max-width: 224px;
-        min-height: 160px;
-    }
-
-    .show_btn {
-        margin: 24px 54px;
-        display: block;
-        position: relative;
-        font-family: "TT Lake Medium";
+        margin-left: 16px;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #1B1C21;
+        text-transform: uppercase;
     }
 
-    .show_btn::before {
-        content: "";
-        position: absolute;
-        top: -1px;
-        left: -34px;
-        display: block;
-        width: 24px;
-        height: 24px;
-        background: url(../img/arrows.svg)  0 0/ 100% no-repeat;
+    .swiper {
+        min-height: 200px;
     }
-}
-
-/* адаптивная верстка 1120px */
-
-@media (min-width: 1120px) {
 
     .swiper-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 240px);
+        max-height: 160px;
     }
 
-    .swiper.expanded {
-        height: 370px;
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        max-width: 224px;
+        min-height: 160px;
+        background: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        margin-right: 24px;
     }
-}
 
-/*  адаптивная верстка 1440px */
+    .swiper-slide:last-child {
+        margin-right: 0;
+    }
 
-@media (min-width: 1440px) {
+    .swiper_content {
+        font-family: "TT Lake Medium", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin: 16px 16px;
+    }
 
-    padding-left: 350px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    .swiper_btn {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
 
-}
+    .show_btn {
+        display: none;
+    }
+
+    /* адаптивная верстка 768px */
+
+    @media (min-width: 768px) {
+
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 240px);
+            gap: 16px;
+        }
+
+        .swiper {
+            margin: 0 16px;
+            min-height: 170px;
+        }
+
+        .swiper.expanded {
+            height: 520px;
+        }
+
+        .swiper-slide {
+            max-width: 224px;
+            min-height: 160px;
+        }
+
+        .show_btn {
+            margin: 24px 54px;
+            display: block;
+            position: relative;
+            font-family: "TT Lake Medium";
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #1B1C21;
+        }
+
+        .show_btn::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: -34px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(../img/arrows.svg) 0 0/ 100% no-repeat;
+        }
+    }
+
+    /* адаптивная верстка 1120px */
+
+    @media (min-width: 1120px) {
+
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 240px);
+        }
+
+        .swiper.expanded {
+            height: 370px;
+        }
+    }
+
+    /*  адаптивная верстка 1440px */
+
+    @media (min-width: 1440px) {
+
+        padding-left: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+    }
 }
