@@ -6,6 +6,13 @@ html, body {
     background: #F8F8F8;
     padding-bottom: 32px;
 
+    .heading {
+        height: 65px;
+        width: 100%;
+        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        margin-bottom: 30px;
+    }
+
     .title {
     margin-left: 16px;
     font-weight: 400;
